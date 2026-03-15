@@ -133,6 +133,24 @@ ollama launch claude --model gpt-oss:20b
 ```
 
 
+### Cloud Model:
+
+Ollama to run the Kimi K2.5 model using the cloud version instead of running the model locally.
+- Reasons:
+    - Your system does not have enough RAM/GPU
+    - The model is too large to run locally
+    - Faster performance from cloud GPUs
+- `kimi-k2.5` - The name of the AI model.
+- `:cloud` - This tag means:
+    - The model runs on a remote cloud server
+    - It does not download the model to your machine
+    - Your prompt is sent to the cloud API
+
+```
+ollama launch claude --model kimi-k2.5:cloud
+```
+
+
 
 ### Example Prompt:
 
